@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<p id="text" name="text"></p>
+<script>
+    var text=window.location.search; //获取后面参数的值
+    var loc=text.substring(text.lastIndexOf("=")+1,text.length);
+    document.getElementById('text').innerHTML=loc;
+   </script>
+</body>
+</html>
